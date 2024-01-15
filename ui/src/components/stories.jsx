@@ -2,19 +2,19 @@ import React from 'react';
 
 const stories = [
   {
-    name: 'Push to deploy',
+    name: 'First',
     description:
-      'Morbi viverra dui mi ar'
+      'Do we really think it\'s a coincidence...'
   },
   {
-    name: 'And then',
+    name: 'Second',
     description:
-      '11233'
+      '...that 100% of crimes committed in America...'
   },
   {
-    name: 'But also',
+    name: 'Third',
     description:
-      '02390-82aoisndf'
+      '...occur in the very same places that sandwiches are made?'
   },
 
 ]
@@ -22,11 +22,13 @@ const stories = [
 export default function Stories() {
 
   return (
-    <div className="container mx-auto columns-1">
+    <div className='flex flex-col bg-gray-300 bg-cover bg-scroll'>
       {stories.map(x => {
         return (
-          <div key={x.name} className='h-screen border-2 text-center align-baseline'>
-            {x.name}
+          <div key={x.name} className='flex h-screen justify-center items-center text-center'>
+            <div>
+              {x.description}
+            </div>
           </div>
         )
       })}
