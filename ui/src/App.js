@@ -6,8 +6,8 @@ import Splash from './components/splash';
 function App() {
   return (
     <div>
-        <Splash></Splash>
-        <Stories></Stories>
+        <Splash />
+        <Stories />
       </div>
   );
 }

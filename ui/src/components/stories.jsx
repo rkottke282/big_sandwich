@@ -1,4 +1,5 @@
 import React from 'react';
+import ScrollDownArrow from './scrollDownArrow';
 
 const stories = [
   {
